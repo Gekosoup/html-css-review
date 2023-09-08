@@ -4,63 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:ital@1&family=Vesper+Libre:wght@400;700&display=swap" rel="stylesheet">
   <title>HTML & CSS Review</title>
-  <link rel="stylesheet" href="style.css/main.css"> 
+  <link rel="stylesheet" href="CSS/style.css"> 
 </head>
 <body>
-
-<header> 
-  <nav role="navigation" id="nav">
-    <span>
-      Scoopalicious
-    </span>  
-      <ul>
-        <l>Flavours</li>
-        <l>Locations</l>
-        <l>Shop online</l>
-      </ul>
-  </nav>
+ 
+<header class="scoop">
+  <b>Scoopalicious</b>
+    <nav role="navigation" id="nav">  
+      <p>Flavours</p>
+      <p>Locations</p>
+      <p>Shop online</p>
+    </nav>
 </header>
-
   <!-- In this hero section you will use the provided ice-cream-cones.jpg as a background image behind the word Scoopalicious. This would be the only section you will want to give a height. -->
-<h1>Scoopalicious</h1>
+<section class="title">
+  <h1>Scoopalicious</h1>
+</section>
 
 <main id="welcome">
   <h2>Welcome to Scoopalicious!</h2>
-
   <h3>Serving the finest vegan ice cream in town, we specialize in crafting dairy-free delights that will send your taste buds into overdrive. From the moment you step inside our cozy urban shop, you'll know you're in for a treat!</h3>
 </main>
 
 <section id="icecream">
   <h2>Top 5 Fan Favourites</h2>
 
-  <h3>Choco-Obsession</h3>
-    <article>
+  <div>
+    <h3>Choco-Obsession</h3>
       <p>A rich, velvety dark chocolate ice cream made from a blend of organic cocoa and creamy coconut cream.</p>
-    </article>  
-
-  <h3>Very Berry Blast</h3>
-    <article>
+  </div>  
+  
+  <div>
+    <h3>Very Berry Blast</h3>
       <p>A harmonious explosion of raspberry, blackberry, and blueberry swirls in a smooth almond base.</p>
-    </article> 
+  </div> 
 
-
-  <h3>Cookie Crumble Craze</h3>
-    <article>
+  <div>
+    <h3>Cookie Crumble Craze</h3>
       <p>Scrummy cookie crumbles meet the creaminess of cashew-based vanilla ice cream.</p>
-    </article> 
+  </div> 
 
-
-  <h3>Peanut Butter Paradise</h3>
-    <article>
+  <div>
+    <h3>Peanut Butter Paradise</h3>
       <p>Luscious peanut butter ribbons swirled throughout a silky oat milk ice cream.</p>
-    </article> 
+  </div> 
 
-
-  <h3>Mango Tango Sorbet</h3>
-    <article>
+  <div>
+    <h3>Mango Tango Sorbet</h3>
       <p>A zesty dance of mango and lime, perfect for a refreshing treat on a hot summer day.</p>
-    </article> 
+  </div> 
 </section>
 
 <section id="team"> 
@@ -100,7 +96,7 @@
 
 
 <footer>
-  All rights reserved © 2023 Scoopalicious
+  <small>All rights reserved © 2023 Scoopalicious</small>
 </footer>
 
   
