@@ -6,37 +6,50 @@
 header {
   background-color: black;
   border-radius: 0em; 
-  margin: 0em;
   width: 1100px;
-  height: 75px;
+  height: 60px;
   box-sizing: border-box;
-  padding: 10px;
+  padding-block-start: 20px;
+  padding-left: 50px;
   border: 5px black;
 }
 
-nav {
+header > b {
   color: lavender;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content:left;
 }
 
-.title {
-  background-image: url(images/ice-cream-cones.jpeg);
-  background-color: #ccc;
+nav > p {
+  color: lavender;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:right;
+  padding-block-end: 20px;
+}
+
+body > .title {
+  background-image: url(../Images/ice-cream-cones.jpg);
   width: 1100px;
-  height: 250px;
+  height: 500px;
+  background-size: -10em;
+  background-position: center;
+  padding-block-start: 10px;
 }
 
 .welcome {
   background-color: blueviolet;
+  width: 1100px;
+  height: 300px;
+  padding-block-start: 20px;
 }
 
 
 h1 {
   text-align: center;
-  font-size: 10rem;
+  font-size: 7rem;
   font-style: normal;
-  text-shadow: 4rem;
-  text-decoration-color: whitesmoke;
+  color: white;
+  text-shadow: 1px 2px 6px lightgrey;
+  padding-block-start: 40px;
 }
