@@ -1,47 +1,93 @@
 * {
   box-sizing: border-box;
   font-family: nunito;
+  line-height: 1.5;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left:  10px;
 }
 
 header {
   background-color: black;
+  position: absolute;
   border-radius: 0em; 
-  width: 1100px;
+  width: 1200px;
   height: 60px;
   box-sizing: border-box;
-  padding-block-start: 20px;
-  padding-left: 50px;
   border: 5px black;
 }
 
-header > b {
-  color: lavender;
+header > nav > h3 {
+  color: light;
   display: flex;
+  width: 600px;
+  height: 60px;
   justify-content:left;
 }
 
-nav > p {
+header > nav {
+  background-color: black;
+  top: 0;
+  left: 10;
+  width: 1000px;
+  height: 60px;
+}
+
+header > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: baseline;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 0px 0px ;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+header > nav > ul {
   color: lavender;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  gap: 20px;
   justify-content:right;
   padding-block-end: 20px;
+  list-style: none;
 }
 
 body > .title {
   background-image: url(../Images/ice-cream-cones.jpg);
-  width: 1100px;
-  height: 500px;
+  width: 1200px;
+  height: 900px;
   background-size: -10em;
   background-position: center;
   padding-block-start: 10px;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left:  10px;
 }
 
 .welcome {
   background-color: blueviolet;
-  width: 1100px;
+  width: 1300px;
   height: 300px;
   padding-block-start: 20px;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
+.welcome > h2 {
+  color: #f2f2f2;
+  padding-left: 110px;
+  font-weight: 800;
 }
 
 
@@ -51,5 +97,5 @@ h1 {
   font-style: normal;
   color: white;
   text-shadow: 1px 2px 6px lightgrey;
-  padding-block-start: 40px;
+  padding-block-start: 250px;
 }
