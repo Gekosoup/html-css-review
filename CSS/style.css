@@ -9,6 +9,16 @@
   padding-left:  10px;
 }
 
+main {
+  box-sizing: border-box;
+  width: 1200px;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;  
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
 header {
   background-color: black;
   position: absolute;
@@ -62,7 +72,6 @@ body > .title {
   background-image: url(../Images/ice-cream-cones.jpg);
   width: 1200px;
   height: 900px;
-  background-size: -10em;
   background-position: center;
   padding-block-start: 10px;
   margin-right: auto;
@@ -83,8 +92,9 @@ h1 {
 
 .welcome {
   background-color: #9370db;
-  width: 1300px;
+  width: 1200px;
   height: 500px;
+  border-radius: 0em;
   padding-block-start: 20px;
   margin-right: auto;
   margin-left:  auto;
@@ -116,7 +126,7 @@ h1 {
 
 .icecream {
   background-color: black;
-  width: 1300px;
+  width: 1200px;
   height: 900px;
   padding-block-start: 20px;
   margin-right: auto;
@@ -136,8 +146,10 @@ h1 {
 }
 
 .icecream > .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
   width: 1000px;
   height: 300px;
   min-height: 600px;
@@ -145,7 +157,7 @@ h1 {
 }
 
 .icecream > .container > div {
-  width: 1000px;
+  width: 500px;
   height: 50px;
   justify-content: left;
 }
@@ -162,12 +174,15 @@ h1 {
   color: #f2f2f2;
   justify-content: left;
   font-family: 'Nunito';
+  width: 400px;
+  height: 400px;
+  margin-right: 800px;
 }
 
 .team {
   background-color: #9370db;
   width: 1200px;
-  height: 800px;
+  height: 900px;
   padding-block-start: 20px;
   margin-right: auto;
   margin-left:  auto;
@@ -180,7 +195,6 @@ h1 {
   background-color: #9370db;
   width: 1200px;
   height: 200px;
-  padding-block-start: 20px;
   margin-right: auto;
   margin-left:  auto;
   max-width: 1200px;
@@ -190,7 +204,7 @@ h1 {
 
 .team > .team-info > h2 {
   color: #f2f2f2;
-  font-family: 'Nunito';
+  font-family: 'Wix Madefor Display', sans-serif;
   font-weight: 800;
   font-size: 2rem;
   text-align: center;
@@ -201,11 +215,21 @@ h1 {
   font-family: 'Nunito';
   font-size: 1rem;
   text-align: center;
+  width: 500px;
+  height: 400px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 75px;
+  border-radius: 150%;
 }
 
 .team > .staff > div > h3 {
   color: #f2f2f2;
-  font-family: 'Nunito';
+  font-family: 'Wix Madefor Display', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
   text-align: center;
@@ -216,6 +240,18 @@ h1 {
   font-family: 'Nunito';
   font-size: 1rem;
   text-align: center;
+}
+
+.team > .staff > div {
+  background-color:#6c52a3;;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 300px;
+  width: 500px;
+  border-radius: 10%;
+  align-items: center; 
 }
 
 .staff {
@@ -232,19 +268,10 @@ h1 {
   text-align: center;
 }
 
-.profile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 125px;
-  height: 100px;
-  border-radius: 150%;
-}
-
 footer {
   background-color: black;
-  width: 1300px;
-  height: 100px;
+  width: 1200px;
+  height: 200px;
   padding-block-start: 20px;
   margin-right: auto;
   margin-left:  auto;
@@ -253,17 +280,11 @@ footer {
   padding-left:  10px;
 }
 
-footer > small {
+footer > small > p {
   color: #f2f2f2;
   font-family: 'Nunito';
   font-size: 1rem;
   text-align: center;
+  padding-bottom: 50px;
 }
 
-{
-  grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
-  column-gap: 10px;
-  row-gap: 15px;
-  align-self: center;
-}
