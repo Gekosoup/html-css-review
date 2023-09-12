@@ -193,7 +193,7 @@ h1 {
 
 .team > .team-info {
   background-color: #9370db;
-  width: 1200px;
+  width: 1000px;
   height: 200px;
   margin-right: auto;
   margin-left:  auto;
@@ -220,8 +220,6 @@ h1 {
 }
 
 .profile {
-  display: flex;
-  flex-direction: row;
   width: 100px;
   height: 75px;
   border-radius: 150%;
@@ -250,8 +248,9 @@ h1 {
   row-gap: 10px;
   height: 300px;
   width: 500px;
+  text-align: center;
+  align-items: center;
   border-radius: 10%;
-  align-items: center; 
 }
 
 .staff {
@@ -262,16 +261,11 @@ h1 {
   align-items: center;
 }
 
-.team > .staff {
-  grid-column: 3;
-  grid-row: 4;
-  text-align: center;
-}
 
 footer {
   background-color: black;
   width: 1200px;
-  height: 200px;
+  height: 150px;
   padding-block-start: 20px;
   margin-right: auto;
   margin-left:  auto;
