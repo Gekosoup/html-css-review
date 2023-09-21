@@ -5,7 +5,8 @@
 body {
   font-family: 'Nunito';
   line-height: 1.5;
-  color: ;
+  color: #fff;
+  margin: 0;
 }
 
 .wrapper {
@@ -13,5 +14,66 @@ body {
   margin: 0 auto;
 }
 
+/* headings - come back next class */
+
+#company-name {
+  color: #dec9e9;
+  font-size: 1.5rem;
+}
+
+#intro,
+#icecream,
+#team {
+  padding: 4em 0;
+}
+
+#header {
+  background-color: black;
+}
+
+#header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding-left: 1.25em;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #DEC9E9;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: white;
+}
+
+#hero-banner {
+  height: 60vh;
+  background-color: #7251b5;
+  background-image: url(../Images/ice-cream-cones.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+} 
+
+#intro {
+  background-color: #7251B5;
+}
+
+#intro p {
+  max-width: 50%;
+}
 
 
