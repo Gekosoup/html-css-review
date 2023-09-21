@@ -103,4 +103,67 @@ h1 {
   padding-right: 15%;
 }
 
+#team {
+  background-color: #7251B5;
+}
+
+.team-intro {
+  color: #f2f2f2;
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#team h2 {
+color: #f2f2f2;
+font-family: 'Wix Madefor Display', sans-serif;
+font-weight: 800;
+max-width: 40%;
+margin: 0 auto;
+text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.5em;
+  gap: 1em;
+}
+
+.team-grid article {
+  background-color: #6647A6;
+  border-radius: 20px;
+  padding: 2em 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 75px;
+}
+
+.team-grid article img {
+  width: 80px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.team-grid h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #f2f2f2;
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.team-grid article p {
+  color: #f2f2f2;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1em 0;
+}
+
 
